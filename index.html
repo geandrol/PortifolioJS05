@@ -8,15 +8,16 @@
     <meta name="author" content="Generation Brasil">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <link rel="icon" href="./assets/img/favicon.svg" />
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Universe</title>
 </head>
 
 <body>
     <!-- Cabeçalho da Página (header) -->
-    <header>
+    <header class="flex menu_container">
 
         <!-- Div Conteudo do Cabeçalho -->
-        <div id="header_content">
+        <div id="header_content" class="menu_content">
 
             <!-- Titulo do Cabeçalho -->
             <div id="titulo">
@@ -27,12 +28,12 @@
             </div>
 
             <!-- Conteudo do Menu da Página (header) -->
-            <div id="menu">
+            <div id="menu" class="flex" >
 
                 <!-- Menu da Página (nav) -->
                 <nav>
                     <!-- Marcadores não ordenados -->
-                    <ul>
+                    <ul class="flex menu_lista">
                         <li><a href="#">Home</a></li>
                         <li><a href="#about">Sobre</a></li>
                         <li><a href="#contact">Contate-me</a></li>
@@ -60,7 +61,9 @@
                     Quod error veniam in voluptatem magni quisquam
                 </p>
 
-                <a target="_blank" href="https://github.com/conteudoGeneration" alt="Github da Generation Brasil">
+                <a
+                class="botao"
+                 target="_blank" href="https://github.com/conteudoGeneration" alt="Github da Generation Brasil">
                     Explorar
                 </a>
 
