@@ -1,17 +1,18 @@
 /* Reset CSS e Variáveis Globais */
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 /* * (Universal Selector): Aplica estilos a todos os elementos na página.
 margin: 0;: Remove todas as margens padrão.
 padding: 0;: Remove o preenchimento padrão.
 text-decoration: none;: Remove a decoração de texto padrão (ex: sublinhado em links).
 font-family: Arial, Helvetica, sans-serif;: Define Arial como a fonte principal, com Helvetica como alternativa e, se não disponíveis, uma fonte genérica sans-serif. */
 
-:root{
+:root {
     --purple-200: #9a7bd1;
     --purple-500: #6b36c8;
     --purple-800: #441f88;
@@ -23,6 +24,7 @@ font-family: Arial, Helvetica, sans-serif;: Define Arial como a fonte principal,
 
     --white: #ffffff;
 }
+
 /* :root: Utilizado para declarar variáveis CSS globais, que podem ser reutilizadas.
 --purple-200, --purple-500, --purple-800: Diferentes tonalidades de roxo.
 --black-800: Preto escuro.
@@ -30,14 +32,15 @@ font-family: Arial, Helvetica, sans-serif;: Define Arial como a fonte principal,
 --white: Branco puro.
 2. Estilos Globais */
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background-color: var(--gray-200);
     color: var(--black-800);
 }
+
 /* html:
 scroll-behavior: smooth;: Faz com que a rolagem entre seções seja suave.
 
@@ -47,7 +50,7 @@ color: var(--black-800);: Define a cor do texto como preto escuro.
 3. Botões e Flexbox
  */
 
-.botao{
+.botao {
     padding: 12px 32px;
     border: 1px solid var(--purple-800);
     border-radius: 10px;
@@ -55,7 +58,7 @@ color: var(--black-800);: Define a cor do texto como preto escuro.
     font-weight: 700;
 }
 
-.botao:hover{
+.botao:hover {
     color: var(--gray-200);
     background-color: var(--purple-800);
 }
@@ -82,7 +85,7 @@ display: flex; justify-content: center; align-items: center;: Utiliza Flexbox pa
 4. Estilização do Cabeçalho (Header)
 */
 
-.menu_container{
+.menu_container {
     background-color: var(--purple-800);
     position: sticky;
     top: 0;
@@ -141,9 +144,9 @@ margin: 0 0 0 16px;: Adiciona espaçamento entre os itens do menu.
 */
 .home_container {
     max-width: 1120px;
-    margin: auto; 
+    margin: auto;
     height: 100vh;
-    display: flex; 
+    display: flex;
 }
 
 .home_container p,
@@ -153,7 +156,7 @@ h4 {
 }
 
 .home_container h4 {
-   margin: 16px 0;
+    margin: 16px 0;
 }
 
 .home_container h1 {
@@ -165,20 +168,21 @@ h4 {
 }
 
 .home_container .botao {
-    width: 40%; 
+    width: 40%;
 }
 
 .home_content {
-    width: 50vw;    
+    width: 50vw;
     display: flex;
-    justify-content: center;    
-    align-items: center;       
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
 .home_content img {
-    width: 75%; 
+    width: 75%;
 }
+
 /* .home_container:
 max-width: 1120px; margin: 16px; height: calc(100vh - 100px); display: flex;: Define o contêiner principal da seção Home, com espaçamento e altura relativa à tela.
 
@@ -206,10 +210,10 @@ width: 75%;: Define a largura das imagens dentro da seção.
  */
 .sobre_container {
     max-width: 1120px;
-    margin: -24px auto; 
+    margin: -24px auto;
     height: 100vh;
-    display: flex; 
-    align-items: center;        
+    display: flex;
+    align-items: center;
 }
 
 .sobre_container img {
@@ -229,12 +233,13 @@ width: 75%;: Define a largura das imagens dentro da seção.
 }
 
 .sobre_github {
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
 }
 
-#sobre_texto{
+#sobre_texto {
     margin-left: 30px;
 }
+
 /* .sobre_container:
 max-width: 1120px; margin: -24px auto; height: 100vh; display: flex; align-items: center;: Define o contêiner da seção Sobre, com altura total da tela e elementos centralizados verticalmente.
 
@@ -252,3 +257,74 @@ justify-content: space-evenly;: Distribui o conteúdo de forma igual dentro do c
 
 #sobre_texto:
 margin-left: 30px;: Adiciona margem à esquerda do texto, afastando-o de outros elementos. */
+
+
+
+/* ESTILIZAÇÃO DA SEÇÃO CONTATO */
+
+.contato_container {
+    max-width: 1120px;
+    margin: auto;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 540px);
+    align-items: center;
+    gap: 30px;
+}
+
+.contanto_content{
+    gap: 30px;
+    flex-direction: column;
+    margin: 64px 0px 0px 0px;
+    font-size: 20px;
+}
+
+h4{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* ESTILIZAÇÃO DA SEÇÃO REDES SOCIAIS */
+
+.social_container a img{
+     width: 70px;
+}
+
+.social_icon:hover {
+   filter:  
+   brightness(0) 
+   saturate(100%) 
+   invert(28%) 
+   sepia(26%) 
+   saturate(4087%) 
+   hue-rotate(242deg) 
+   brightness(94%) 
+   contrast(103%)
+   ;
+}
+
+/* ESTILIZAÇÃO DA SEÇÃO FORMULÁRIO */
+
+form{
+   display: flex; 
+   flex-direction: column;
+   margin: 70px 0px 0px 0px;
+   padding: 24px;
+}
+
+
+form label{
+    font-size: 20px;
+}
+
+form input, textarea{
+    margin: 8px 0 16px;
+    padding: 8px;
+    border-radius: 14px;
+    border: none;
+    font-weight: bold;
+}
+form button{
+    background-color: transparent;
+}
+
