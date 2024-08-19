@@ -136,12 +136,13 @@ list-style: none;: Remove as marcas de lista padrão dos itens do menu.
 margin: 0 0 0 16px;: Adiciona espaçamento entre os itens do menu.
 
 
+
 5. Estilização da Seção Home
 */
 .home_container {
     max-width: 1120px;
-    margin: 16px; 
-    height: calc(100vh - 100px);    
+    margin: auto; 
+    height: 100vh;
     display: flex; 
 }
 
@@ -175,7 +176,7 @@ h4 {
     flex-direction: column;
 }
 
-.home_content_img {
+.home_content img {
     width: 75%; 
 }
 /* .home_container:
@@ -198,6 +199,8 @@ width: 50vw; display: flex; justify-content: center; align-items: center; flex-d
 
 .home_content_img:
 width: 75%;: Define a largura das imagens dentro da seção.
+
+
 
 6. Estilização da Seção Sobre
  */
